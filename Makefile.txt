@@ -1,0 +1,10 @@
+interface: interface server
+	gcc -o interface server
+interface: interface.c
+	gcc -o interface interface.c
+server: server.c
+	gcc -o server server.c
+
+clean: 
+	rm -f interface
+	rm -f server
